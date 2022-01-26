@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		93E8EF3927A0C91200C5D60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF3827A0C91200C5D60B /* AppDelegate.swift */; };
 		93E8EF3B27A0C91200C5D60B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF3A27A0C91200C5D60B /* SceneDelegate.swift */; };
-		93E8EF3D27A0C91200C5D60B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF3C27A0C91200C5D60B /* ViewController.swift */; };
+		93E8EF3D27A0C91200C5D60B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF3C27A0C91200C5D60B /* LoginViewController.swift */; };
 		93E8EF4027A0C91200C5D60B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E8EF3E27A0C91200C5D60B /* Main.storyboard */; };
 		93E8EF4227A0C91300C5D60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E8EF4127A0C91300C5D60B /* Assets.xcassets */; };
 		93E8EF4527A0C91300C5D60B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E8EF4327A0C91300C5D60B /* LaunchScreen.storyboard */; };
 		93E8EF5027A0C91300C5D60B /* pokeLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF4F27A0C91300C5D60B /* pokeLifeTests.swift */; };
 		93E8EF5A27A0C91300C5D60B /* pokeLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF5927A0C91300C5D60B /* pokeLifeUITests.swift */; };
 		93E8EF5C27A0C91300C5D60B /* pokeLifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF5B27A0C91300C5D60B /* pokeLifeUITestsLaunchTests.swift */; };
+		93E8EF6C27A0D29C00C5D60B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF6B27A0D29C00C5D60B /* SignUpViewController.swift */; };
+		93E8EF6E27A0D2B600C5D60B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF6D27A0D2B600C5D60B /* ForgotPasswordViewController.swift */; };
+		93E8EF7027A0D2DC00C5D60B /* PokemonsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF6F27A0D2DC00C5D60B /* PokemonsCollectionViewController.swift */; };
+		93E8EF7227A0D2F600C5D60B /* PokemonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF7127A0D2F600C5D60B /* PokemonInfoViewController.swift */; };
+		93E8EF7427A0D32200C5D60B /* DropDownMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF7327A0D32200C5D60B /* DropDownMenuViewController.swift */; };
+		93E8EF7627A0D34000C5D60B /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF7527A0D34000C5D60B /* MyInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		93E8EF3527A0C91200C5D60B /* pokeLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokeLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E8EF3827A0C91200C5D60B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93E8EF3A27A0C91200C5D60B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93E8EF3C27A0C91200C5D60B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93E8EF3C27A0C91200C5D60B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		93E8EF3F27A0C91200C5D60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93E8EF4127A0C91300C5D60B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93E8EF4427A0C91300C5D60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		93E8EF5527A0C91300C5D60B /* pokeLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokeLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E8EF5927A0C91300C5D60B /* pokeLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokeLifeUITests.swift; sourceTree = "<group>"; };
 		93E8EF5B27A0C91300C5D60B /* pokeLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokeLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93E8EF6B27A0D29C00C5D60B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		93E8EF6D27A0D2B600C5D60B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		93E8EF6F27A0D2DC00C5D60B /* PokemonsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsCollectionViewController.swift; sourceTree = "<group>"; };
+		93E8EF7127A0D2F600C5D60B /* PokemonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoViewController.swift; sourceTree = "<group>"; };
+		93E8EF7327A0D32200C5D60B /* DropDownMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenuViewController.swift; sourceTree = "<group>"; };
+		93E8EF7527A0D34000C5D60B /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +113,9 @@
 			children = (
 				93E8EF3827A0C91200C5D60B /* AppDelegate.swift */,
 				93E8EF3A27A0C91200C5D60B /* SceneDelegate.swift */,
-				93E8EF3C27A0C91200C5D60B /* ViewController.swift */,
-				93E8EF3E27A0C91200C5D60B /* Main.storyboard */,
+				93E8EF6A27A0CA6D00C5D60B /* Model */,
+				93E8EF6927A0CA6400C5D60B /* View */,
+				93E8EF6827A0CA5B00C5D60B /* Controller */,
 				93E8EF4127A0C91300C5D60B /* Assets.xcassets */,
 				93E8EF4327A0C91300C5D60B /* LaunchScreen.storyboard */,
 				93E8EF4627A0C91300C5D60B /* Info.plist */,
@@ -125,6 +138,35 @@
 				93E8EF5B27A0C91300C5D60B /* pokeLifeUITestsLaunchTests.swift */,
 			);
 			path = pokeLifeUITests;
+			sourceTree = "<group>";
+		};
+		93E8EF6827A0CA5B00C5D60B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93E8EF3C27A0C91200C5D60B /* LoginViewController.swift */,
+				93E8EF6B27A0D29C00C5D60B /* SignUpViewController.swift */,
+				93E8EF6D27A0D2B600C5D60B /* ForgotPasswordViewController.swift */,
+				93E8EF6F27A0D2DC00C5D60B /* PokemonsCollectionViewController.swift */,
+				93E8EF7127A0D2F600C5D60B /* PokemonInfoViewController.swift */,
+				93E8EF7327A0D32200C5D60B /* DropDownMenuViewController.swift */,
+				93E8EF7527A0D34000C5D60B /* MyInfoViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		93E8EF6927A0CA6400C5D60B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93E8EF3E27A0C91200C5D60B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93E8EF6A27A0CA6D00C5D60B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93E8EF3D27A0C91200C5D60B /* ViewController.swift in Sources */,
+				93E8EF7427A0D32200C5D60B /* DropDownMenuViewController.swift in Sources */,
+				93E8EF7027A0D2DC00C5D60B /* PokemonsCollectionViewController.swift in Sources */,
+				93E8EF3D27A0C91200C5D60B /* LoginViewController.swift in Sources */,
+				93E8EF6E27A0D2B600C5D60B /* ForgotPasswordViewController.swift in Sources */,
 				93E8EF3927A0C91200C5D60B /* AppDelegate.swift in Sources */,
+				93E8EF6C27A0D29C00C5D60B /* SignUpViewController.swift in Sources */,
 				93E8EF3B27A0C91200C5D60B /* SceneDelegate.swift in Sources */,
+				93E8EF7627A0D34000C5D60B /* MyInfoViewController.swift in Sources */,
+				93E8EF7227A0D2F600C5D60B /* PokemonInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
