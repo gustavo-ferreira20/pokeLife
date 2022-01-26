@@ -10,12 +10,13 @@ import UIKit
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTxtField: UITextField!
-    
     @IBOutlet weak var PasswordTxtField: UITextField!
+    
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loginButton.layer.cornerRadius = 10
     }
 
     @IBAction func didLoginPress(_ sender: Any) {
@@ -26,7 +27,7 @@ class LoginViewController: UIViewController {
         self.performSegue(withIdentifier: "SignUpSegue", sender: self)
     }
     @IBAction func didForgotPswPress(_ sender: Any) {
-        self.performSegue(withIdentifier: "ForgotPswSegue", sender: self) 
+        self.performSegue(withIdentifier: "ForgotPswSegue", sender: self)
     }
     
     
