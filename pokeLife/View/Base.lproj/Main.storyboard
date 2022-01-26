@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="D2N-TC-AYs" userLabel="background">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="D2N-TC-AYs" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="1eD-qc-Dd8">
@@ -123,9 +123,9 @@
                             <constraint firstItem="1eD-qc-Dd8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Jd1-Lv-t3t"/>
                             <constraint firstItem="bLe-JY-c8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="KYT-xl-KQA"/>
                             <constraint firstItem="pbJ-7x-Awa" firstAttribute="top" secondItem="bLe-JY-c8a" secondAttribute="bottom" constant="67" id="T9B-ww-IVL"/>
-                            <constraint firstItem="D2N-TC-AYs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VAo-04-kD9"/>
+                            <constraint firstItem="D2N-TC-AYs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VAo-04-kD9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pbJ-7x-Awa" secondAttribute="trailing" constant="87" id="Xz9-Ro-84K"/>
-                            <constraint firstItem="D2N-TC-AYs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cyb-ks-hAp"/>
+                            <constraint firstItem="D2N-TC-AYs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="cyb-ks-hAp"/>
                             <constraint firstAttribute="bottom" secondItem="D2N-TC-AYs" secondAttribute="bottom" id="eAW-tT-RuJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1eD-qc-Dd8" secondAttribute="trailing" constant="87" id="yKh-gw-cur"/>
                         </constraints>
@@ -169,7 +169,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="J5Y-gv-gjX" userLabel="background">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="J5Y-gv-gjX" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pokeLife" translatesAutoresizingMaskIntoConstraints="NO" id="LKh-HY-4mm">
@@ -191,8 +191,8 @@
                         <viewLayoutGuide key="safeArea" id="8za-xM-0Pv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="J5Y-gv-gjX" firstAttribute="trailing" secondItem="8za-xM-0Pv" secondAttribute="trailing" id="4cw-Yw-tSg"/>
-                            <constraint firstItem="J5Y-gv-gjX" firstAttribute="leading" secondItem="8za-xM-0Pv" secondAttribute="leading" id="YC3-mA-6D7"/>
+                            <constraint firstItem="J5Y-gv-gjX" firstAttribute="trailing" secondItem="woa-eU-eEO" secondAttribute="trailing" id="4cw-Yw-tSg"/>
+                            <constraint firstItem="J5Y-gv-gjX" firstAttribute="leading" secondItem="woa-eU-eEO" secondAttribute="leading" id="YC3-mA-6D7"/>
                             <constraint firstAttribute="bottom" secondItem="J5Y-gv-gjX" secondAttribute="bottom" id="aJ2-0N-PSq"/>
                             <constraint firstItem="J5Y-gv-gjX" firstAttribute="top" secondItem="woa-eU-eEO" secondAttribute="top" id="kJL-bo-RNm"/>
                         </constraints>
@@ -211,7 +211,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="CEN-DB-9R2" userLabel="background">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="CEN-DB-9R2" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pokeLife" translatesAutoresizingMaskIntoConstraints="NO" id="2qm-hr-1GP">
@@ -253,7 +253,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="reZ-52-I66" userLabel="background">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="reZ-52-I66" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pokemons Collection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huc-wg-CLQ">
@@ -299,8 +299,8 @@
                         <constraints>
                             <constraint firstItem="reZ-52-I66" firstAttribute="top" secondItem="GcR-vM-MnE" secondAttribute="top" id="49a-6C-brN"/>
                             <constraint firstAttribute="bottom" secondItem="reZ-52-I66" secondAttribute="bottom" id="Awq-6N-bOM"/>
-                            <constraint firstItem="reZ-52-I66" firstAttribute="trailing" secondItem="iOC-N8-s6O" secondAttribute="trailing" id="f2J-po-RPx"/>
-                            <constraint firstItem="reZ-52-I66" firstAttribute="leading" secondItem="iOC-N8-s6O" secondAttribute="leading" id="ia7-0V-1ta"/>
+                            <constraint firstItem="reZ-52-I66" firstAttribute="trailing" secondItem="GcR-vM-MnE" secondAttribute="trailing" id="f2J-po-RPx"/>
+                            <constraint firstItem="reZ-52-I66" firstAttribute="leading" secondItem="GcR-vM-MnE" secondAttribute="leading" id="ia7-0V-1ta"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rzf-aU-zTL"/>
@@ -321,7 +321,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="0az-aa-6cC" userLabel="background">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="0az-aa-6cC" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Single Pokemon Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFB-gI-w3e">
@@ -353,8 +353,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0az-aa-6cC" firstAttribute="top" secondItem="4GK-BV-GSW" secondAttribute="top" id="MXB-Dn-LGJ"/>
-                            <constraint firstItem="0az-aa-6cC" firstAttribute="trailing" secondItem="uU7-9d-2wr" secondAttribute="trailing" id="NiI-Xa-wON"/>
-                            <constraint firstItem="0az-aa-6cC" firstAttribute="leading" secondItem="uU7-9d-2wr" secondAttribute="leading" id="NtM-vt-ySe"/>
+                            <constraint firstItem="0az-aa-6cC" firstAttribute="trailing" secondItem="4GK-BV-GSW" secondAttribute="trailing" id="NiI-Xa-wON"/>
+                            <constraint firstItem="0az-aa-6cC" firstAttribute="leading" secondItem="4GK-BV-GSW" secondAttribute="leading" id="NtM-vt-ySe"/>
                             <constraint firstAttribute="bottom" secondItem="0az-aa-6cC" secondAttribute="bottom" id="S37-9t-67W"/>
                         </constraints>
                     </view>
@@ -372,7 +372,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="UPc-au-fJ9" userLabel="background">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="UPc-au-fJ9" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeM-ai-IWs">
@@ -395,9 +395,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UPc-au-fJ9" firstAttribute="top" secondItem="dzp-Ls-KTr" secondAttribute="top" id="Kqs-4y-Hzb"/>
-                            <constraint firstItem="UPc-au-fJ9" firstAttribute="leading" secondItem="rPm-FE-F7s" secondAttribute="leading" id="dNx-rm-ta7"/>
+                            <constraint firstItem="UPc-au-fJ9" firstAttribute="leading" secondItem="dzp-Ls-KTr" secondAttribute="leading" id="dNx-rm-ta7"/>
                             <constraint firstAttribute="bottom" secondItem="UPc-au-fJ9" secondAttribute="bottom" id="hWP-z1-CFK"/>
-                            <constraint firstItem="UPc-au-fJ9" firstAttribute="trailing" secondItem="rPm-FE-F7s" secondAttribute="trailing" id="rZe-RU-6Ae"/>
+                            <constraint firstItem="UPc-au-fJ9" firstAttribute="trailing" secondItem="dzp-Ls-KTr" secondAttribute="trailing" id="rZe-RU-6Ae"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wdT-1P-q6A"/>
@@ -414,7 +414,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="0DU-wk-wX9" userLabel="background">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="0DU-wk-wX9" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pokeLife" translatesAutoresizingMaskIntoConstraints="NO" id="jVs-t2-jbX">
@@ -436,8 +436,8 @@
                         <viewLayoutGuide key="safeArea" id="yWB-OY-ocC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0DU-wk-wX9" firstAttribute="leading" secondItem="yWB-OY-ocC" secondAttribute="leading" id="MT2-UN-aZN"/>
-                            <constraint firstItem="0DU-wk-wX9" firstAttribute="trailing" secondItem="yWB-OY-ocC" secondAttribute="trailing" id="pwh-TS-RJw"/>
+                            <constraint firstItem="0DU-wk-wX9" firstAttribute="leading" secondItem="63w-cr-U8H" secondAttribute="leading" id="MT2-UN-aZN"/>
+                            <constraint firstItem="0DU-wk-wX9" firstAttribute="trailing" secondItem="63w-cr-U8H" secondAttribute="trailing" id="pwh-TS-RJw"/>
                             <constraint firstItem="0DU-wk-wX9" firstAttribute="top" secondItem="63w-cr-U8H" secondAttribute="top" id="sMw-wK-VlU"/>
                             <constraint firstAttribute="bottom" secondItem="0DU-wk-wX9" secondAttribute="bottom" id="wKR-IZ-wjk"/>
                         </constraints>
