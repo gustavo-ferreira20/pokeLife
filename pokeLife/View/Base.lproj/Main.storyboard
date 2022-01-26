@@ -32,7 +32,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbJ-7x-Awa">
-                                <rect key="frame" x="87" y="560" width="240" height="272"/>
+                                <rect key="frame" x="87" y="528" width="240" height="272"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZuE-GB-u27">
                                         <rect key="frame" x="0.0" y="23" width="240" height="40"/>
@@ -122,7 +122,7 @@
                             <constraint firstItem="pbJ-7x-Awa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="9k9-cT-l2j"/>
                             <constraint firstItem="1eD-qc-Dd8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Jd1-Lv-t3t"/>
                             <constraint firstItem="bLe-JY-c8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="KYT-xl-KQA"/>
-                            <constraint firstItem="pbJ-7x-Awa" firstAttribute="top" secondItem="bLe-JY-c8a" secondAttribute="bottom" constant="67" id="T9B-ww-IVL"/>
+                            <constraint firstItem="pbJ-7x-Awa" firstAttribute="top" secondItem="bLe-JY-c8a" secondAttribute="bottom" constant="35" id="T9B-ww-IVL"/>
                             <constraint firstItem="D2N-TC-AYs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VAo-04-kD9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pbJ-7x-Awa" secondAttribute="trailing" constant="87" id="Xz9-Ro-84K"/>
                             <constraint firstItem="D2N-TC-AYs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="cyb-ks-hAp"/>
@@ -179,6 +179,20 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MwP-6z-san">
                                 <rect key="frame" x="87" y="185" width="240" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUH-R4-aw8">
+                                        <rect key="frame" x="-12" y="23" width="264" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVC-2e-72Y">
+                                        <rect key="frame" x="-12" y="88" width="264" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twq-rs-aQt">
                                 <rect key="frame" x="186" y="565" width="58" height="21"/>
@@ -208,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2k2-cH-vnv" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2012" y="118"/>
+            <point key="canvasLocation" x="2011.594202898551" y="117.85714285714285"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="Zsc-4q-Mtp">
