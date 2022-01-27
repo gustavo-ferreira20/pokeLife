@@ -13,8 +13,7 @@ class PokemonsCollectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let rightBarButton = UIBarButtonItem(customView: searchBars)
-        self.navigationItem.rightBarButtonItem = rightBarButton
+        layoutDetails()
     }
     
 
@@ -25,6 +24,14 @@ class PokemonsCollectionViewController: UIViewController {
  
     @IBAction func didMyInfoClick(_ sender: Any) {
         self.performSegue(withIdentifier: "MyInfoSegue", sender: self)
+    }
+    
+    
+    private func layoutDetails(){
+        let rightBarButton = UIBarButtonItem(customView: searchBars)
+        searchBars.backgroundColor = UIColor.white
+        searchBars.layer.cornerRadius = 10
+        self.navigationItem.rightBarButtonItem = rightBarButton
     }
     
 }
