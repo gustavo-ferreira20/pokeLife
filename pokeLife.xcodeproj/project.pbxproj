@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93D6625427A24ED1008501BC /* TypeButtonsColleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6625327A24ED1008501BC /* TypeButtonsColleCollectionViewCell.swift */; };
 		93E8EF3927A0C91200C5D60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF3827A0C91200C5D60B /* AppDelegate.swift */; };
 		93E8EF3B27A0C91200C5D60B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF3A27A0C91200C5D60B /* SceneDelegate.swift */; };
 		93E8EF3D27A0C91200C5D60B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8EF3C27A0C91200C5D60B /* LoginViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93D6625327A24ED1008501BC /* TypeButtonsColleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeButtonsColleCollectionViewCell.swift; sourceTree = "<group>"; };
 		93E8EF3527A0C91200C5D60B /* pokeLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokeLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E8EF3827A0C91200C5D60B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93E8EF3A27A0C91200C5D60B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		93E8EF6A27A0CA6D00C5D60B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				93D6625327A24ED1008501BC /* TypeButtonsColleCollectionViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				93E8EF7027A0D2DC00C5D60B /* PokemonsCollectionViewController.swift in Sources */,
 				93E8EF3D27A0C91200C5D60B /* LoginViewController.swift in Sources */,
 				93E8EF6E27A0D2B600C5D60B /* ForgotPasswordViewController.swift in Sources */,
+				93D6625427A24ED1008501BC /* TypeButtonsColleCollectionViewCell.swift in Sources */,
 				93E8EF3927A0C91200C5D60B /* AppDelegate.swift in Sources */,
 				93E8EF6C27A0D29C00C5D60B /* SignUpViewController.swift in Sources */,
 				93E8EF3B27A0C91200C5D60B /* SceneDelegate.swift in Sources */,

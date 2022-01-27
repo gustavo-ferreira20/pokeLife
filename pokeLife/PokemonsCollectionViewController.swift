@@ -9,7 +9,9 @@ import UIKit
 
 class PokemonsCollectionViewController: UIViewController {
     
-   private lazy var searchBars:UISearchBar = UISearchBar(frame: CGRect(x: 0,y: 0,width: 300,height: 10))
+    private lazy var searchBars:UISearchBar = UISearchBar(frame: CGRect(x: 0,y: 0,width: 300,height: 10))
+//    if the Collcetion view doent show all itens, just to Collection View Flow Layout in the Storyboard and change the "Estimate Size" to none
+    private var typeArrays = ["Normal", "Fire", "Water", "Grass", "Eletric", "Ice", "Fighting","Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Dark", "Dragon", "Steel", "Fairy", "Ghost"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +35,23 @@ class PokemonsCollectionViewController: UIViewController {
         searchBars.layer.cornerRadius = 10
         self.navigationItem.rightBarButtonItem = rightBarButton
     }
+    
+}
+
+extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return typeArrays.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TypeButton", for: indexPath) as! TypeButtonsColleCollectionViewCell
+        
+        cell.typeButton.setTitle(typeArrays[indexPath.row], for: .normal)
+        
+        return cell
+    }
+    
     
 }

@@ -390,14 +390,63 @@
                                     <action selector="didMyInfoClick:" destination="nm9-s2-wNI" eventType="touchUpInside" id="whl-jv-joP"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fco-2F-wxy" userLabel="Types Collection View">
+                                <rect key="frame" x="0.0" y="92" width="414" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="uIm-iK-lma"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wes-2c-leJ">
+                                    <size key="itemSize" width="102" height="66.5"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TypeButton" id="4Rx-1d-9YL" customClass="TypeButtonsColleCollectionViewCell" customModule="pokeLife" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-0.5" width="102" height="66.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cwo-fN-8tv">
+                                            <rect key="frame" x="0.0" y="0.0" width="102" height="66.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wL2-X0-MRX">
+                                                    <rect key="frame" x="0.0" y="25" width="102" height="41.5"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
+                                                        <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wL2-X0-MRX" firstAttribute="leading" secondItem="cwo-fN-8tv" secondAttribute="leading" id="JQ7-u2-qo0"/>
+                                                <constraint firstAttribute="bottom" secondItem="wL2-X0-MRX" secondAttribute="bottom" id="JRn-gR-yWr"/>
+                                                <constraint firstItem="wL2-X0-MRX" firstAttribute="top" secondItem="cwo-fN-8tv" secondAttribute="top" constant="25" id="Usa-CY-EeJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="wL2-X0-MRX" secondAttribute="trailing" id="agM-ND-xi6"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="102" height="66.5"/>
+                                        <connections>
+                                            <outlet property="typeButton" destination="wL2-X0-MRX" id="c7q-Qv-lFk"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="nm9-s2-wNI" id="G7F-yH-1pA"/>
+                                    <outlet property="delegate" destination="nm9-s2-wNI" id="R6h-bA-Jzd"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iOC-N8-s6O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="reZ-52-I66" firstAttribute="top" secondItem="GcR-vM-MnE" secondAttribute="top" id="49a-6C-brN"/>
                             <constraint firstAttribute="bottom" secondItem="reZ-52-I66" secondAttribute="bottom" id="Awq-6N-bOM"/>
+                            <constraint firstItem="Fco-2F-wxy" firstAttribute="trailing" secondItem="iOC-N8-s6O" secondAttribute="trailing" id="XeU-c8-ewD"/>
                             <constraint firstItem="reZ-52-I66" firstAttribute="trailing" secondItem="GcR-vM-MnE" secondAttribute="trailing" id="f2J-po-RPx"/>
                             <constraint firstItem="reZ-52-I66" firstAttribute="leading" secondItem="GcR-vM-MnE" secondAttribute="leading" id="ia7-0V-1ta"/>
+                            <constraint firstItem="Fco-2F-wxy" firstAttribute="top" secondItem="iOC-N8-s6O" secondAttribute="top" constant="4" id="tqH-wb-2Lb"/>
+                            <constraint firstItem="Fco-2F-wxy" firstAttribute="leading" secondItem="iOC-N8-s6O" secondAttribute="leading" id="wOW-gk-NFb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rzf-aU-zTL">
