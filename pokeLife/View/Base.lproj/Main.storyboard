@@ -472,23 +472,34 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_5" translatesAutoresizingMaskIntoConstraints="NO" id="0az-aa-6cC" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Single Pokemon Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFB-gI-w3e">
-                                <rect key="frame" x="116" y="544" width="220" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pokeLife" translatesAutoresizingMaskIntoConstraints="NO" id="LXL-3y-qez">
-                                <rect key="frame" x="87" y="64" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4A7-8U-jf3">
-                                <rect key="frame" x="87" y="185" width="240" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pgs-T4-Ivz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9m-5c-4Ix">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a00-83-0gO">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="230"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="IN5-yh-2Wj"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKr-Pc-8IU">
+                                                <rect key="frame" x="200" y="0.0" width="214" height="230"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="230" id="uuI-kr-FyQ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdk-3T-E2H">
+                                        <rect key="frame" x="0.0" y="230" width="414" height="578"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hy6-Ju-g2h">
-                                <rect key="frame" x="290" y="20" width="83" height="31"/>
+                                <rect key="frame" x="312" y="20" width="60.5" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Close"/>
@@ -503,7 +514,11 @@
                             <constraint firstItem="0az-aa-6cC" firstAttribute="top" secondItem="4GK-BV-GSW" secondAttribute="top" id="MXB-Dn-LGJ"/>
                             <constraint firstItem="0az-aa-6cC" firstAttribute="trailing" secondItem="4GK-BV-GSW" secondAttribute="trailing" id="NiI-Xa-wON"/>
                             <constraint firstItem="0az-aa-6cC" firstAttribute="leading" secondItem="4GK-BV-GSW" secondAttribute="leading" id="NtM-vt-ySe"/>
+                            <constraint firstItem="Pgs-T4-Ivz" firstAttribute="top" secondItem="uU7-9d-2wr" secondAttribute="top" id="PGp-f9-aHt"/>
                             <constraint firstAttribute="bottom" secondItem="0az-aa-6cC" secondAttribute="bottom" id="S37-9t-67W"/>
+                            <constraint firstItem="Pgs-T4-Ivz" firstAttribute="leading" secondItem="uU7-9d-2wr" secondAttribute="leading" id="exu-wx-pnA"/>
+                            <constraint firstItem="uU7-9d-2wr" firstAttribute="trailing" secondItem="Pgs-T4-Ivz" secondAttribute="trailing" id="ged-qX-jjx"/>
+                            <constraint firstItem="uU7-9d-2wr" firstAttribute="bottom" secondItem="Pgs-T4-Ivz" secondAttribute="bottom" id="vtV-m1-AzJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o4A-qh-BK3"/>
