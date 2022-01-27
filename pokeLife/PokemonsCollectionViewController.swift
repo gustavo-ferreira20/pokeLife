@@ -8,11 +8,13 @@
 import UIKit
 
 class PokemonsCollectionViewController: UIViewController {
+    
+   private lazy var searchBars:UISearchBar = UISearchBar(frame: CGRect(x: 0,y: 0,width: 300,height: 20))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let rightBarButton = UIBarButtonItem(customView: searchBars)
+        self.navigationItem.rightBarButtonItem = rightBarButton
     }
     
 
