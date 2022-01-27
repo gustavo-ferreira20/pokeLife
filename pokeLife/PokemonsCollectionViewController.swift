@@ -9,7 +9,7 @@ import UIKit
 
 class PokemonsCollectionViewController: UIViewController {
     
-   private lazy var searchBars:UISearchBar = UISearchBar(frame: CGRect(x: 0,y: 0,width: 300,height: 20))
+   private lazy var searchBars:UISearchBar = UISearchBar(frame: CGRect(x: 0,y: 0,width: 300,height: 10))
 
     override func viewDidLoad() {
         super.viewDidLoad()
