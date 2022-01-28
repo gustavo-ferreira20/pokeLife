@@ -349,7 +349,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="32E-UV-ZhQ">
                                 <rect key="frame" x="0.0" y="162" width="414" height="734"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g11-hP-wit">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g11-hP-wit">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -453,6 +453,7 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="pokemonsCollectionView" destination="32E-UV-ZhQ" id="7Dp-MZ-YdF"/>
                         <segue destination="jRQ-eC-Vts" kind="presentation" identifier="PokeInfoSegue" id="4sb-RQ-v3t"/>
                         <segue destination="iEq-hc-FwK" kind="show" identifier="MyInfoSegue" id="ovB-tZ-iTm"/>
                     </connections>

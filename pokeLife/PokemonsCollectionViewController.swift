@@ -14,11 +14,13 @@ class PokemonsCollectionViewController: UIViewController {
     private var typeArrays = ["Normal", "Fire", "Water", "Grass", "Eletric", "Ice", "Fighting","Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Dark", "Dragon", "Steel", "Fairy", "Ghost"]
 
     override func viewDidLoad() {
+        self.pokemonsCollectionView.backgroundColor = .clear
         super.viewDidLoad()
         layoutDetails()
     }
     
-
+    @IBOutlet weak var pokemonsCollectionView: UICollectionView!
+    
     @IBAction func didPokemonClick(_ sender: Any) {
         self.performSegue(withIdentifier: "PokeInfoSegue", sender: self)
     }
