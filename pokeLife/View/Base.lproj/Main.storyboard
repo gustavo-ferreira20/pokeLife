@@ -347,9 +347,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="32E-UV-ZhQ">
-                                <rect key="frame" x="0.0" y="162" width="414" height="734"/>
+                                <rect key="frame" x="0.0" y="166" width="414" height="734"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g11-hP-wit">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g11-hP-wit">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -390,8 +390,8 @@
                                     <action selector="didMyInfoClick:" destination="nm9-s2-wNI" eventType="touchUpInside" id="whl-jv-joP"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fco-2F-wxy" userLabel="Types Collection View">
-                                <rect key="frame" x="0.0" y="92" width="414" height="66"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fco-2F-wxy" userLabel="Types Collection View">
+                                <rect key="frame" x="0.0" y="114" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="uIm-iK-lma"/>
                                 </constraints>
@@ -403,7 +403,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TypeButton" id="4Rx-1d-9YL" customClass="TypeButtonsColleCollectionViewCell" customModule="pokeLife" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-0.5" width="102" height="66.5"/>
+                                        <rect key="frame" x="0.0" y="-11.5" width="102" height="66.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cwo-fN-8tv">
                                             <rect key="frame" x="0.0" y="0.0" width="102" height="66.5"/>
@@ -436,6 +436,10 @@
                                     <outlet property="delegate" destination="nm9-s2-wNI" id="R6h-bA-Jzd"/>
                                 </connections>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokeball" id="Kcg-Ey-hfN">
+                                <rect key="frame" x="20" y="36" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iOC-N8-s6O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -453,6 +457,8 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="pokemonsCollectionView" destination="32E-UV-ZhQ" id="7Dp-MZ-YdF"/>
+                        <outlet property="typeView" destination="Fco-2F-wxy" id="nex-Bn-NcG"/>
                         <segue destination="jRQ-eC-Vts" kind="presentation" identifier="PokeInfoSegue" id="4sb-RQ-v3t"/>
                         <segue destination="iEq-hc-FwK" kind="show" identifier="MyInfoSegue" id="ovB-tZ-iTm"/>
                     </connections>
@@ -616,8 +622,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZMe-Qm-ltx">
-                                                    <rect key="frame" x="117" y="15" width="33" height="14.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="My Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZMe-Qm-ltx">
+                                                    <rect key="frame" x="117" y="15" width="42" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
