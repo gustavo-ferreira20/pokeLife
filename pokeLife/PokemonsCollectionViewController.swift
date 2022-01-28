@@ -15,10 +15,12 @@ class PokemonsCollectionViewController: UIViewController {
 
     override func viewDidLoad() {
         self.pokemonsCollectionView.backgroundColor = .clear
+        self.typeView.backgroundColor = .clear
         super.viewDidLoad()
         layoutDetails()
     }
     
+    @IBOutlet weak var typeView: UICollectionView!
     @IBOutlet weak var pokemonsCollectionView: UICollectionView!
     
     @IBAction func didPokemonClick(_ sender: Any) {
@@ -33,9 +35,11 @@ class PokemonsCollectionViewController: UIViewController {
     
     private func layoutDetails(){
         let rightBarButton = UIBarButtonItem(customView: searchBars)
+        let leftBarButton = UIBarButtonItem(title:"        ", style:.plain, target: self, action: #selector(onTapButton))
         searchBars.backgroundColor = UIColor.white
         searchBars.layer.cornerRadius = 10
         self.navigationItem.rightBarButtonItem = rightBarButton
+        self.navigationItem.leftBarButtonItem = leftBarButton
     }
     
 }
@@ -55,5 +59,10 @@ extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollecti
         return cell
     }
     
+    
+    @objc
+    func onTapButton() {
+        print("Button is tapped.")
+    }
     
 }
