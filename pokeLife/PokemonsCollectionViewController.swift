@@ -10,7 +10,7 @@ import UIKit
 class PokemonsCollectionViewController: UIViewController {
     
     private lazy var searchBars:UISearchBar = UISearchBar(frame: CGRect(x: 0,y: 0,width: 280,height: 10))
-//    if the Collcetion view doent show all itens, just to Collection View Flow Layout in the Storyboard and change the "Estimate Size" to none
+//    if the Collection view doent show all itens, just go to Collection View Flow Layout in the Storyboard and change the "Estimate Size" to none
     private var typeArrays = ["Normal", "Fire", "Water", "Grass", "Eletric", "Ice", "Fighting","Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Dark", "Dragon", "Steel", "Fairy", "Ghost"]
 
     override func viewDidLoad() {
