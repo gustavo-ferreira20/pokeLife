@@ -9,15 +9,30 @@ import UIKit
 
 class PokemonsCollectionViewController: UIViewController {
     
+    private var pokemonAPIManager = PokemonAPIManager()
+    
     private lazy var searchBars:UISearchBar = UISearchBar(frame: CGRect(x: 0,y: 0,width: 280,height: 10))
 //    if the Collection view doent show all itens, just go to Collection View Flow Layout in the Storyboard and change the "Estimate Size" to none
     private var typeArrays = ["Normal", "Fire", "Water", "Grass", "Eletric", "Ice", "Fighting","Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Dark", "Dragon", "Steel", "Fairy", "Ghost"]
+    
+    private var pokemonURL = "https://pokeapi.co/api/v2/pokemon?limit=151"
+    private var individualPokemonInfo = "https://pokeapi.co/api/v2/pokemon/1/"
+    private let apiKey = ""
 
     override func viewDidLoad() {
         self.pokemonsCollectionView.backgroundColor = .clear
         self.typeView.backgroundColor = .clear
         super.viewDidLoad()
         layoutDetails()
+        
+        //API request
+        pokemonAPIManager.performRequest(urlString: pokemonURL) {
+            DispatchQueue.main.async {
+//                update UI with all API request here
+//                self.pokemonsCollectionView.reloadData()
+            }
+        }
+
     }
     
     @IBOutlet weak var typeView: UICollectionView!
