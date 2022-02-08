@@ -10,6 +10,9 @@ import UIKit
 class PokemonsCollectionViewController: UIViewController {
     
     private var pokemonAPIManager = PokemonAPIManager()
+    private var pokemonList = [PokemonData]()
+    
+    private var teste = ["A", "B", "C", "D", "E", "F", "G"]
     
     private lazy var searchBars:UISearchBar = UISearchBar(frame: CGRect(x: 0,y: 0,width: 280,height: 10))
 //    if the Collection view doent show all itens, just go to Collection View Flow Layout in the Storyboard and change the "Estimate Size" to none
@@ -57,27 +60,44 @@ class PokemonsCollectionViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = leftBarButton
     }
     
+    @objc
+    func onTapButton() {
+        print("Button is tapped.")
+    }
+    
 }
+
+// CollectionView for the button of pokemon types and each Pokemon from API
 
 extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return typeArrays.count
+        if collectionView == self.typeView {
+            return typeArrays.count
+        } else{
+            return teste.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TypeButton", for: indexPath) as! TypeButtonsColleCollectionViewCell
+        if collectionView == self.typeView{
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TypeButton", for: indexPath) as! TypeButtonsColleCollectionViewCell
+            
+            cell.typeButton.setTitle(typeArrays[indexPath.row], for: .normal)
+            
+            return cell
+        } else{
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokemonList", for: indexPath) as! PokemonListCollectionViewCell
+            
+            cell.pokemonName.text = teste[indexPath.row]
+            
+            return cell
+        }
         
-        cell.typeButton.setTitle(typeArrays[indexPath.row], for: .normal)
-        
-        return cell
     }
     
     
-    @objc
-    func onTapButton() {
-        print("Button is tapped.")
-    }
+ 
     
 }
