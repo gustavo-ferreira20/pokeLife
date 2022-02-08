@@ -10,9 +10,6 @@ import UIKit
 class PokemonsCollectionViewController: UIViewController {
     
     private var pokemonAPIManager = PokemonAPIManager()
-    private var pokemonList = [PokemonData]()
-    
-    private var teste = ["A", "B", "C", "D", "E", "F", "G"]
     
     private lazy var searchBars:UISearchBar = UISearchBar(frame: CGRect(x: 0,y: 0,width: 280,height: 10))
 //    if the Collection view doent show all itens, just go to Collection View Flow Layout in the Storyboard and change the "Estimate Size" to none
@@ -32,7 +29,7 @@ class PokemonsCollectionViewController: UIViewController {
         pokemonAPIManager.performRequest(urlString: pokemonURL) {
             DispatchQueue.main.async {
 //                update UI with all API request here
-//                self.pokemonsCollectionView.reloadData()
+                self.pokemonsCollectionView.reloadData()
             }
         }
 
@@ -65,6 +62,7 @@ class PokemonsCollectionViewController: UIViewController {
         print("Button is tapped.")
     }
     
+    
 }
 
 // CollectionView for the button of pokemon types and each Pokemon from API
@@ -76,7 +74,7 @@ extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollecti
         if collectionView == self.typeView {
             return typeArrays.count
         } else{
-            return teste.count
+            return pokemonAPIManager.pokemonsArray?.results?.count ?? 0
         }
     }
     
@@ -90,14 +88,15 @@ extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollecti
         } else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokemonList", for: indexPath) as! PokemonListCollectionViewCell
             
-            cell.pokemonName.text = teste[indexPath.row]
+            cell.pokemonName.text = pokemonAPIManager.pokemonsArray?.results?[indexPath.row].name
+            cell.contentView.layer.cornerRadius = 10
+            cell.contentView.layer.borderWidth = 1.0
+            cell.contentView.layer.borderColor = UIColor.clear.cgColor
             
             return cell
         }
         
     }
     
-    
- 
     
 }
