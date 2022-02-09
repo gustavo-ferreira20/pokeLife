@@ -10,6 +10,7 @@ import UIKit
 class PokemonsCollectionViewController: UIViewController {
     
     private var pokemonAPIManager = PokemonAPIManager()
+    private var myIndex = 0
     
     private lazy var searchBars:UISearchBar = UISearchBar(frame: CGRect(x: 0,y: 0,width: 280,height: 10))
 //    if the Collection view doent show all itens, just go to Collection View Flow Layout in the Storyboard and change the "Estimate Size" to none
@@ -17,7 +18,7 @@ class PokemonsCollectionViewController: UIViewController {
     
     private var pokemonURL = "https://pokeapi.co/api/v2/pokemon?limit=151"
     private var individualPokemonInfo = "https://pokeapi.co/api/v2/pokemon/1/"
-    private let apiKey = ""
+//    private let apiKey = ""
 
     override func viewDidLoad() {
         self.pokemonsCollectionView.backgroundColor = .clear
@@ -38,10 +39,6 @@ class PokemonsCollectionViewController: UIViewController {
     @IBOutlet weak var typeView: UICollectionView!
     @IBOutlet weak var pokemonsCollectionView: UICollectionView!
     
-    @IBAction func didPokemonClick(_ sender: Any) {
-        self.performSegue(withIdentifier: "PokeInfoSegue", sender: self)
-    }
-    
  
     @IBAction func didMyInfoClick(_ sender: Any) {
         self.performSegue(withIdentifier: "MyInfoSegue", sender: self)
@@ -61,7 +58,15 @@ class PokemonsCollectionViewController: UIViewController {
     func onTapButton() {
         print("Button is tapped.")
     }
-    
+ 
+    // Passing Data to PokemonInfoView
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "PokeInfoSegue") {
+            let pokemonInfoView = segue.destination as! PokemonInfoViewController
+            
+            pokemonInfoView.pokemonName = pokemonAPIManager.pokemonsArray?.results?[myIndex].name
+        }
+    }
     
 }
 
@@ -96,6 +101,18 @@ extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollecti
             return cell
         }
         
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        obtain all cell info upon clicking
+        print(pokemonAPIManager.pokemonsArray?.results?[indexPath.row].name ?? "no name available")
+        myIndex = indexPath.row
+        print(myIndex)
+    
+        // Redirecting to PokemonInfoView
+        
+        self.performSegue(withIdentifier: "PokeInfoSegue", sender: self)
     }
     
     

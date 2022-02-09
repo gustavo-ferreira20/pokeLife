@@ -9,10 +9,16 @@ import UIKit
 
 class PokemonInfoViewController: UIViewController {
 
+    @IBOutlet weak var pokemonnameLabel: UILabel!
+    
+    var pokemonName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        pokemonnameLabel.text = pokemonName
+        print(pokemonName as Any)
+        print("Showed up")
     }
     
 
