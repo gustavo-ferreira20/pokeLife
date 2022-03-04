@@ -17,14 +17,12 @@ class PokemonsCollectionViewController: UIViewController {
     private var typeArrays = ["Normal", "Fire", "Water", "Grass", "Eletric", "Ice", "Fighting","Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Dark", "Dragon", "Steel", "Fairy", "Ghost"]
     
     private var pokemonURL = "https://pokeapi.co/api/v2/pokemon?limit=151"
-    private var eachPokemonInfoURL: [String] = []
-    private var testURL = "https://pokeapi.co/api/v2/pokemon/1/"
+    private var individualURL = ""
 //    private var individualPokemonInfo = "https://pokeapi.co/api/v2/pokemon/1/"
     
     private var pokemons: PokemonData?
     private var individualPokemon: IndividualpokemonInfo?
     
-    var pokemonModel: PokemonModel?
   
 
 
@@ -44,9 +42,7 @@ class PokemonsCollectionViewController: UIViewController {
                 self.pokemonsCollectionView.reloadData()
             }
         }
-        
-        //Test ======
-        
+ 
         
         
     }
@@ -82,6 +78,7 @@ class PokemonsCollectionViewController: UIViewController {
             
 //            pokemonInfoView.pokemonName = pokemonAPIManager.pokemonsArray?.results?[myIndex].name
             pokemonInfoView.pokemonName = pokemons?.results?[myIndex].name
+            pokemonInfoView.pokemonIndividualURL = pokemons?.results?[myIndex].url
         }
     }
         
@@ -141,9 +138,6 @@ extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollecti
                 }
             }
             
-
-            
-//            print(pokemonAPIManager.pokemonIndividualInfo?.types?[indexPath.row].type.name ?? "no name here")
             
             return cell
         }

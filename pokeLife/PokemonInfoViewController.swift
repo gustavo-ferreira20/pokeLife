@@ -12,12 +12,14 @@ class PokemonInfoViewController: UIViewController {
     @IBOutlet weak var pokemonnameLabel: UILabel!
     
     var pokemonName: String?
+    var pokemonIndividualURL: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         pokemonnameLabel.text = pokemonName
         print(pokemonName as Any)
+        print(pokemonIndividualURL as Any)
     }
     
 
