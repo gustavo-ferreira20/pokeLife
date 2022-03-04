@@ -111,7 +111,7 @@ extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollecti
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokemonList", for: indexPath) as! PokemonListCollectionViewCell
             
 //            cell.pokemonName.text = pokemonAPIManager.pokemonsArray?.results?[indexPath.row].name
-            cell.pokemonName.text = pokemons?.results?[indexPath.row].name
+            cell.pokemonName.text = pokemons?.results?[indexPath.row].name.capitalizingFirstLetter()
 
             
             cell.contentView.layer.cornerRadius = 10
@@ -130,9 +130,9 @@ extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollecti
 //                        cell.pokemonType.text = individualPokemon.types[0].type.name
 //                        cell.pokemonType.text = individualPokemon.types[0].type.name
                         if individualPokemon.types.count == 1{
-                            cell.pokemonType.text = individualPokemon.types[0].type.name
+                            cell.pokemonType.text = individualPokemon.types[0].type.name.capitalizingFirstLetter()
                         } else{
-                            cell.pokemonType.text = "\(individualPokemon.types[0].type.name) / \(individualPokemon.types[1].type.name)"
+                            cell.pokemonType.text = "\(individualPokemon.types[0].type.name.capitalizingFirstLetter()) / \(individualPokemon.types[1].type.name.capitalizingFirstLetter())"
                         }
                     }
                 }
@@ -159,4 +159,16 @@ extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollecti
     }
     
     
+}
+
+// Capitalizing first Letter of a String
+
+extension String {
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).capitalized + dropFirst()
+    }
+
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
+    }
 }
