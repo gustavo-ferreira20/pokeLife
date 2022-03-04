@@ -18,7 +18,6 @@ class PokemonInfoViewController: UIViewController {
         
         pokemonnameLabel.text = pokemonName
         print(pokemonName as Any)
-        print("Showed up")
     }
     
 
