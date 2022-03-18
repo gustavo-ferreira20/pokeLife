@@ -21,11 +21,16 @@ struct EachPokemonData: Codable{
 struct IndividualpokemonInfo: Codable{
     let types: [PokemonCharacteristics]
     let name: String
+    let sprites: PokeImage
 }
 
 struct PokemonCharacteristics: Codable{
     let type: PokemonType
     let slot: Int
+}
+
+struct PokeImage: Codable{
+    let front_default: String
 }
 
 struct PokemonType: Codable{
@@ -38,3 +43,4 @@ struct PokemonType: Codable{
 //types[0].type.name
 //types[0].slot
 // name
+// sprites.back_default

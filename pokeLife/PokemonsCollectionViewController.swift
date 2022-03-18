@@ -17,8 +17,9 @@ class PokemonsCollectionViewController: UIViewController {
     private var typeArrays = ["Normal", "Fire", "Water", "Grass", "Eletric", "Ice", "Fighting","Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Dark", "Dragon", "Steel", "Fairy", "Ghost"]
     
     private var pokemonURL = "https://pokeapi.co/api/v2/pokemon?limit=151"
+//    all pokemons link: https://pokeapi.co/api/v2/pokemon/?limit=898
     private var individualURL = ""
-//    private var individualPokemonInfo = "https://pokeapi.co/api/v2/pokemon/1/"
+
     
     private var pokemons: PokemonData?
     private var individualPokemon: IndividualpokemonInfo?
@@ -126,6 +127,15 @@ extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollecti
 //                    print(individualPokemon.types)
 //                    print(individualPokemon.types[0].type.name)
                     DispatchQueue.main.async {
+                    //        Displaying the Image
+                        guard let url = URL(string: individualPokemon.sprites.front_default) else {return}
+                            do{
+                               let data = try Data(contentsOf: url)
+                                cell.pokemonPhoto.image = UIImage(data: data)
+                                cell.pokemonPhoto.contentMode = .scaleAspectFit
+                            }catch{
+                                print("No Image")
+                            }
 //                        cell.pokemonType.text = individualPokemon.name
 //                        cell.pokemonType.text = individualPokemon.types[0].type.name
 //                        cell.pokemonType.text = individualPokemon.types[0].type.name
