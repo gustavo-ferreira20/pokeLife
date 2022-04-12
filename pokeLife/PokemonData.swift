@@ -22,6 +22,7 @@ struct IndividualpokemonInfo: Codable{
     let types: [PokemonCharacteristics]
     let name: String
     let sprites: PokeImage
+    let moves: [PokemonMoves]
 }
 
 struct PokemonCharacteristics: Codable{
@@ -37,6 +38,13 @@ struct PokemonType: Codable{
     let name: String
 }
 
+struct PokemonMoves: Codable{
+    let move: EachMove
+}
+
+struct EachMove: Codable{
+    let name: String
+}
 
 
 //  results[0].name -- results
@@ -44,3 +52,5 @@ struct PokemonType: Codable{
 //types[0].slot
 // name
 // sprites.back_default
+// moves[1].move.name
+// moves

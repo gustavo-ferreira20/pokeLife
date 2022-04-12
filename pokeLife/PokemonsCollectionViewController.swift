@@ -139,6 +139,7 @@ extension PokemonsCollectionViewController: UICollectionViewDelegate, UICollecti
 //                        cell.pokemonType.text = individualPokemon.name
 //                        cell.pokemonType.text = individualPokemon.types[0].type.name
 //                        cell.pokemonType.text = individualPokemon.types[0].type.name
+                        //Displayin the type of each Pokemon
                         if individualPokemon.types.count == 1{
                             cell.pokemonType.text = individualPokemon.types[0].type.name.capitalizingFirstLetter()
                         } else{
